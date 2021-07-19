@@ -5,9 +5,6 @@
   <% @articles.each do |article| %>
     <li>
       <%= link_to article.title, article %>
-      <a href="<%= article_path(article) %>">
-        <%= article.title %>
-      </a>
     </li>
   <% end %>
 </ul>

@@ -13,6 +13,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
+    #@article = Article.new(title: params[:article][:title], body: params[:article][:title])
 
     if @article.save
       redirect_to @article
